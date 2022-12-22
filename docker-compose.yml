@@ -8,6 +8,7 @@ services:
       - ./app:/app
     environment:
       - WATCHPACK_POLLING=true
+    tty: true
     command: sh -c "cd app && npm run dev"
     ports:
       - 3000:3000
